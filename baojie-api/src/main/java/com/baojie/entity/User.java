@@ -2,9 +2,8 @@ package com.baojie.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-
-import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.io.Serializable;
 
 /**
  * <p>
@@ -12,7 +11,7 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author baojie
- * @since 2018-08-29
+ * @since 2018-08-30
  */
 public class User implements Serializable {
 
