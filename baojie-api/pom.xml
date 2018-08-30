@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.baojie</groupId>
-    <version>1.0-SNAPSHOT</version>
     <artifactId>baojie-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <name>baojie-api</name>
     <url>http://www.baojie.com</url>
@@ -18,6 +18,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>3.0-RELEASE</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
