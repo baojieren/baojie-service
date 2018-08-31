@@ -4,6 +4,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.baojie.entity.User;
 import com.baojie.mapper.UserMapper;
 import com.baojie.service.UserService;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -24,8 +25,14 @@ import java.util.Set;
         timeout = 30000
 )
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
+
     @Autowired
     private UserMapper userMapper;
+
+    @Override
+    public User getUserByCond(User user) {
+        return getOne(new QueryWrapper<>(user));
+    }
 
     @Override
     public Set<String> getRoleListByUserId(Integer userId) throws Exception {

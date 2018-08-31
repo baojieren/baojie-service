@@ -1,19 +1,19 @@
 package com.baojie.service;
 
 import com.baojie.entity.User;
-import com.baomidou.mybatisplus.extension.service.IService;
-
 import java.util.Set;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author baojie
  * @since 2018-08-30
  */
-public interface UserService extends IService<User> {
+public interface UserService {
+    User getUserByCond(User user);
+
     /**
      * 用于shiro获取用户角色
      *
