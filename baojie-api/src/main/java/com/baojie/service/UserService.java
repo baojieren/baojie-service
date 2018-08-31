@@ -1,6 +1,8 @@
 package com.baojie.service;
 
 import com.baojie.entity.User;
+import com.baomidou.mybatisplus.extension.service.IService;
+
 import java.util.Set;
 
 /**
@@ -9,7 +11,7 @@ import java.util.Set;
  * </p>
  *
  * @author baojie
- * @since 2018-08-30
+ * @since 2018-08-31
  */
 public interface UserService {
     User getUserByCond(User user);
